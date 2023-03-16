@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+// class component
 class Question12 extends React.Component {
   constructor(props) {
     super(props);
@@ -17,10 +18,22 @@ class Question12 extends React.Component {
         khi cập nhật State xong thì sẽ tiến hành update UI ( tương ứng với việc gọi lại hàm render() ) */}
         <button onClick={() => this.setState({ count: this.state.count + 1 })}>
           Click me
-        </button>
+        </button> 
+        {/* mỗi khi click button này thì giá trị count sẽ tăng lên 1 */}
       </div>
     );
   }
 }
 
-export default Question12;
+// function component
+const Question12Function = () => {
+  const [count, setCount] = useState();
+  return (
+    <>
+      <p>You click {count} times </p>
+      <button onClick={setCount(count + 1)}></button> 
+    </>
+  );
+};
+
+export { Question12, Question12Function };
