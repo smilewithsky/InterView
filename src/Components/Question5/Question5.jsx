@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Question9Class extends React.Component {
+class Question5Class extends React.Component {
     render() {
         const handleClick = () => {
             alert("Hello world")
@@ -11,7 +11,7 @@ class Question9Class extends React.Component {
     }
 }
 
-function Question9Function(){
+function Question5Function(){
     const handleClick = () => {
         alert("Hello world")
     }
@@ -23,4 +23,4 @@ function Question9Function(){
 };
 
 
-export {Question9Class , Question9Function}
+export {Question5Class , Question5Function}

@@ -1,37 +1,21 @@
 import React from 'react';
 
-class Question14_ClassComponents extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: ""
-        }
-    }
+class Question14_ClassComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    // Khai báo state
+    this.state = {
+      name: '',
+      age: 0
+    };
+  }
 
-    render() {
-    const handleSubmit = () => {
-        alert(`Your name is ${this.state.name}`)
-    }
+  render() {
+    return <>
+        name: {this.state.name}
+        old: {this.state.old}
+    </>
+  }
+}
 
-    return (
-        <form onSubmit={() => handleSubmit()}>
-            <div className="form-group">
-                <label>Name: </label>
-                <input value={this.state.name} onChange={(e) => {
-                    this.setState(() => {
-                        return {
-                            ...this.state,
-                            name: e.target.value
-                        }
-                    });
-                }} />
-            </div>
-            <div className="form-group">
-                <input type="submit" />
-            </div>
-        </form>
-    )
-            }
-};  
-
-export default Question14_ClassComponents
+export default Question14_ClassComponent

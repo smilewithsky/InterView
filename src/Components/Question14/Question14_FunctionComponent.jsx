@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Question22_FunctionComponent() {
+function Question14_FunctionComponent() {
   // Khai báo state
   const [name, setName] = useState('');
   const [age, setAge] = useState(0);
@@ -13,4 +13,4 @@ function Question22_FunctionComponent() {
     )
 }
 
-export default Question22_FunctionComponent
+export default Question14_FunctionComponent

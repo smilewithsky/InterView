@@ -1,13 +1,15 @@
 import React from "react";
-class Question20 extends React.Component {
+class Question12 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { // khởi tạo state
-      count: 0
+    this.state = {
+      // khởi tạo state
+      count: 0,
     };
   }
 
-  render() { // hàm render
+  render() {
+    // hàm render
     return (
       <div>
         <p>You clicked {this.state.count} times</p>
@@ -21,4 +23,4 @@ class Question20 extends React.Component {
   }
 }
 
-export default Question20;
+export default Question12;

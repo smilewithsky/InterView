@@ -1,5 +1,5 @@
 import React from 'react';
-class Question11_Class extends React.Component {
+class Question6_Class extends React.Component {
     render() {
         const list = ["táo" , "lê" , "xoài" , "ổi"]
         // render một mảng các string theo câu cú pháp giống như Javascript
@@ -11,7 +11,7 @@ class Question11_Class extends React.Component {
     }
 }
 
-function Question11(){
+function Question6(){
     const list = ["táo" , "lê" , "xoài" , "ổi"]
     return (
         <div>
@@ -24,4 +24,4 @@ function Question11(){
     );
 };
 
-export {Question11 , Question11_Class};
+export {Question6 , Question6_Class};

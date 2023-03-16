@@ -1,32 +1,36 @@
 import React from "react";
-import { Question11, Question11_Class } from "./Components/Question11/Question11";
-import Question14ClassComponents from "./Components/Question14/Question14_ClassComponents";
-import Question14FunctionComponents from "./Components/Question14/Question14_FunctionComponents";
-import Question20 from "./Components/Question20/question-20";
-import { ParentClass, ParentFunction } from "./Components/Question25";
-import Question39 from "./Components/Question39/Quesion39";
-import { Question9Class, Question9Function } from "./Components/Question9/Question9";
+import Question9ClassComponents from "./Components/Question9/Question9_ClassComponents";
+import Question9FunctionComponents from "./Components/Question9/Question9_FunctionComponents";
+import Question12 from "./Components/Question12/question12";
+import { ParentClass, ParentFunction } from "./Components/Question17";
+import Question20 from "./Components/Question20/Quesion20";
+import { Question6, Question6_Class } from "./Components/Question6/Question6";
+import {
+  Question5Class,
+  Question5Function,
+} from "./Components/Question5/Question5";
 class Example extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
     };
   }
 
-  render() { // hàm render
+  render() {
+    // hàm render
     return (
       <>
-      <ParentClass />
-      <ParentFunction />
-        <Question14ClassComponents />
-          <Question14FunctionComponents />
-          <Question20  />
-          <Question9Class />
-          <Question9Function />
-          <Question11 />
-          <Question11_Class />
-          <Question39 />
+        <ParentClass />
+        <ParentFunction />
+        <Question9ClassComponents />
+        <Question9FunctionComponents />
+        <Question12 />
+        <Question5Class />
+        <Question5Function />
+        <Question6 />
+        <Question6_Class />
+        <Question20 />
       </>
     );
   }
